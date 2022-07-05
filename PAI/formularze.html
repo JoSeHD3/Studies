@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/walidacja.js"></script>
+    <title>
+        Tworzenie formularzy
+    </title>
+</head>
+<body>
+    <!--<div id="kontener">-->
+        <header>
+            <h2> Szybki kurs HTML </h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Podstawowe znaczniki</a></li>
+                    <li><a href="tabele.html">Tworzenie tabel</a></li>
+                    <li><a href="">Formularze</a>
+                    <ul>
+                        <li><a href="formularze.html">Budowa formularzy</a></li>
+                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                    </ul></li>
+                    <li><a href="galeria.html" title="">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="wszystko">
+            <section>
+                <h3>Podstawowe znaczniki HTML to:</h3>
+                <ul>
+                    <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
+                    <li>&lt;input&gt; - znacznik umożliwia wstawianie różnych pól (pole tekstowe, pole typu radio, pole typu checkbox) w zależności od wartości jego atrybutu type</li>
+                    <li>&lt;select&gt; - pole komentarza typu lista rozwijana</li>
+                    <li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+                    <li>&lt;button&gt; - pole formularza typu przycisk</li>
+                </ul>
+                <h3>Przykładowy formularz HTML:</h3>
+                <form action="mailto:s95369@pollub.edu.pl" method="post" onsubmit="return sprawdz()">
+                <table>
+                    <tr>
+                        <td>Imie*: </td>
+                        <td><input type="text" name="name" id = "name"/></td>
+                        <td id="im_error" class="czerwone"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko*: </td>
+                        <td><input type="text" name="surname" id = "surname"/></td>
+                        <td id="nazw_error" class="czerwone"></td>
+                    </tr>
+                    <tr>
+                        <td>Wiek*: </td>
+                        <td><input type="number" name="age" id = "age"/></td>
+                        <td id="wiek_error" class="czerwone"></td>
+                    </tr>
+                    <tr><td>Państwo:</td>
+                        <td><select name="country" id="country">
+                            <option value="Polska">Polska</option>
+                            <option value="Niemcy">Niemcy</option>
+                            <option value="Wielka Brytania">Wielka Brytania</option>
+                            <option value="Francja">Francja</option>
+                        </select> </td></tr>
+                    <tr>
+                        <td>Adres e-mail*:</td>
+                        <td> <input type="email" name="mail" id = "mail"/></td>
+                        <td id="mail_error" class="czerwone"></td>
+                    </tr>
+                </table>
+                <h4>Zamawiam tutorial z języka:</h4><p>
+                    <input type="checkbox" name="cb1" id="PHP" value="PHP" /> PHP
+                    <input type="checkbox" name="cb1" id="C" value="C"/> C/C++
+                    <input type="checkbox" name="cb1" id="Java" value="Java"/> Java <br />
+                    <span id="produkt_error" class="czerwone"></span></p>
+                <h4>Sposób zapłaty*: </h4><p>
+                    <input type="radio" name="przegladarka" value="Eurocard" /> Eurocard <br />
+                    <input type="radio" name="przegladarka" value="Visa" /> Visa <br />
+                    <input type="radio" name="przegladarka" value="Przelew Bankowy" /> Przelew bankowy <br />
+                    <span id="zaplata_error" class="czerwone"></span>
+                <input type="submit" value="Wyślij" />
+                <input type="reset" value="Anuluj" /></p>
+                </form>
+            </section>
+            <div id = "kursy">
+                <aside>
+                    <h3> Walidatory: </h3>
+                    <ul>
+                        <li> <a href="http://validator.w3.org/">HTML </a></li>
+                        <li> <a href="http://jigsaw.w3.org/css-validator/">CSS</a></li>
+                    </ul>
+                </aside>
+                <aside>
+                    <h3> Kursy: </h3>
+                    <ul>
+                        <li> <a href="https://www.w3schools.com/html/"> HTML </a></li>
+                        <li> <a href="https://www.w3schools.com/css/"> CSS </a></li>
+                        <li> <a href="https://www.w3schools.com/js/"> JS </a></li>
+                        <li> <a href="https://www.w3schools.com/php/"> PHP </a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <footer id="stopka">
+            &copy;stopka
+        </footer>
+    <!--</div>-->
+</body>
+</html>

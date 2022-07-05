@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale = 1.0">
+    <script src="JS/form.js"></script>
+    <title>
+        Formularz RGB
+    </title>
+</head>
+<body>
+    <h2>Test sessionStorage</h2>
+    <table>
+        <tr><td>Kod koloru:</td>
+            <td><input type=text id="kod"/></td></tr>
+        <tr><td>Nazwa koloru:</td>
+            <td><input type=text id="nazwa"/></td></tr>
+        <tr>
+            <td><button onclick="zapiszPare()">Zapisz pare</button></td>
+            <td><button onclick="pokazWszystkiePary()">Pokaz wszystkie pary</button></td>
+            <td><button onclick="usunDane()">Usun dane</button></td>
+        </tr>
+    </table>
+    <h2>Dane z sessionStorage</h2>
+    <p>
+        <span id="dane"></span>
+    </p>
+</body>

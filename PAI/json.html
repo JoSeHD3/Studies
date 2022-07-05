@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale = 1.0">
+    <script src="JS/json.js"></script>
+    <title>
+        Formularz RGB
+    </title>
+</head>
+<body>
+    <h2>Test JSON</h2>
+    <table>
+        <tr><td>Nazwa produktu::</td>
+            <td><input type=text id="nazwa"/></td></tr>
+        <tr><td>Cena produktu:</td>
+            <td><input type=text id="cena"/></td></tr>
+        <tr>
+        <tr><td>Kolor:</td>
+            <td><input type=text id="kolor"/></td></tr>
+        <tr>
+        <tr><td>Liczba sztuk:</td>
+            <td><input type=text id="liczba"/></td></tr>
+        <tr>
+            <td><button onclick="zapiszProdukt()">Zapisz produkt do koszyka</button></td>
+            <td><button onclick="wyswietlKoszyk()">Wyświetl koszyk</button></td>
+            <td><button onclick="usunProdukty()">Usun wszystkie produkty</button></td>
+        </tr>
+    </table>
+    <h2>Dane z sessionStorage</h2>
+    <p>
+        <span id="dane"></span>
+    </p>
+</body>

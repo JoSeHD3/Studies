@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+ <head>
+ <title> Formularz rejestracyjny</title>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+    <body>
+        <div>
+        <form action="#" method="get">
+            <p>
+                Imię*:<br />
+                <input type="text" name="imie" required pattern="^[A-ZŁŚ][a-złśąę]{1,20}(\s[A-ZŁŚ][a-złśąę]{1,20})?$"><br />
+                Nazwisko*:<br />
+                <input type="text" name="nazwisko" required pattern="^[A-ZŁŚ][a-złśąę]{1,20}(\-[A-ZŁŚ][a-złśąę]{1,20})?$"><br />
+                Email*:<br />
+                <input name="email" required type="email" placeholder="xyz@abc.xx" pattern="^(([\w_]+)-*\.?)+@[\w](([\w]+)-?_?\.?)+([a-z]{2,4})$"><br />
+                Data urodzenia:<br />
+                <input name="data" type="date"><br />
+                Hasło*:<br />
+                <input type="password" name="haslo" required><br />
+            </p>
+            <p>
+                Uczeń: <input type="radio" name="kto" value="uczen">
+                Student: <input type="radio" name="kto" value="student">
+                Pracownik: <input type="radio" name="kto" value="pracownik"><br />
+                <br />
+                Zainteresowania:
+                <select name="zainteresowania" multiple size="3">
+                    <option value="sport">Sport</option>
+                    <option value="muzyka">Muzyka</option>
+                    <option value="film">Film</option>
+                    <option value="motoryzacja">Motoryzacja</option>
+                    <option value="taniec">Taniec</option>
+                    <option value="podróże">Podróże</option>
+                </select><br />
+                <input type="checkbox" name="akceptacja" required >*Akceptuję regulamin <br />
+                <input type="submit" value="Rejestruj">
+                <input type="reset" value="Wyczyść">
+            </p>
+        </form>
+        </div>
+        </body>
+</html>

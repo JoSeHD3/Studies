@@ -1,0 +1,108 @@
+body{
+    background: #252526;
+    color: #ffffff;
+}
+
+table {
+    background: #f03ce7;
+    text-align: center;
+    width: 94%;
+    margin: 2%;
+    border: 1pt solid #3218c4;
+}
+
+section{
+    background: #454545;
+    border-radius: 25px;
+}
+
+caption {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+thead, tfoot {
+    background: #5e45ec;
+    color: #ffffff;
+    font-size: 110%;
+    padding: 5pt;
+}
+
+tbody {
+    background: #5e45ec;
+    color: #000000;
+}
+
+td, th {
+    border: 1pt solid #221181;
+}
+
+tfoot a {
+    color: #968d8d;
+}
+
+h2, h3, #stopka {
+    background: #5e45ec;
+    border-radius: 25px;
+    padding: 8px;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav ul{
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    font-family: calibri, tahoma;
+    margin-left: 35px;
+}
+
+nav ul li{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background: #98bed8;
+    margin-left: 5px;
+}
+
+nav ul li:hover{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    background: #f0f0f0;
+    margin-left: 3px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+}
+
+nav ul li li a{
+    width: 160px;
+}
+
+nav ul li li:hover{
+    background: white;
+}
+
+nav ul li ul{
+    overflow: hidden;
+    display: none;
+}
+
+nav ul li:hover ul{
+    position: absolute;
+    background: #aaa;
+    padding: 0;
+    top: 114px;
+    left: 330px;
+    display: block;
+    width: 177px;
+}
+
+tr:nth-child(even) td{
+    background: #ffffff;
+}

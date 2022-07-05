@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vievport" content="width=device-width, initial-scale = 1.0">
+        <title>
+            Kreator Pizzy
+        </title>
+    </head>
+    <body>
+        <div id="kontener">
+            <div id="baner">
+                <h2>Kreator Pizzy</h2>
+            </div>
+            <div id="tresc">
+                <form action="mailto:s95369@pollub.edu.pl" method="post"></form>
+                <fieldset id="fsRozmiar">
+                <legend>Rozmiar</legend>
+                    <input type="radio" name="przegladarka" value="small" /> Mała
+                    <input type="radio" name="przegladarka" value="medium" /> Średnia
+                    <input type="radio" name="przegladarka" value="large" /> Duża
+                </fieldset>
+                <fieldset id="fsDodatki">
+                <legend>Dodatki</legend>
+                    <input type="checkbox" value="szynka" /> Szynka <br />
+                    <input type="checkbox" value="salami" /> Salami <br />
+                    <input type="checkbox" value="boczek" /> Boczek <br />
+                    <input type="checkbox" value="papryka" /> Papryka <br />
+                    <input type="checkbox" value="pomidor" /> Pomidor <br />
+                    <input type="checkbox" value="ser" /> Ser
+                </fieldset>
+                <fieldset id="fsSosy">
+                <legend>Sosy</legend>   
+                    <table>
+                        <tr><td>Wybierz sos:</td><td>
+                        <select name="cbSosy" size = "3">
+                            <option value="pomidorowy">Pomidorowy</option>
+                            <option value="czosnkowy">Czosnkowy</option>
+                            <option value="ketchLagodny">Ketchup Łagodny</option>
+                            <option value="ketchPikantny">Ketchup Pikantny</option>
+                        </select>
+                        </td></tr>
+                        <tr><td>Inne uwagi:</td><td>
+                            <textarea name="uwagi" rows="3" cols="30"></textarea>
+                        </td></tr>
+                    </table>
+                </fieldset> <br />
+                <input type="reset" value="Anuluj zamówienie" />
+                <input type="submit" value="Wyślij dane" />
+            </div>
+            <div id="stopka">
+                <br />
+                &copy;stopka
+            </div>
+        </div>
+    </body>
+</html>

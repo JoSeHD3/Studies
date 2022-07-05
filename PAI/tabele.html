@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="CSS/tabele.css" type="text/css"/>
+    <title>
+        Tworzenie tabel
+    </title>
+</head>
+<body>
+    <!--<div id="kontener">-->
+        <header>
+            <h2> Szybki kurs HTML </h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Podstawowe znaczniki</a></li>
+                    <li><a href="tabele.html">Tworzenie tabel</a></li>
+                    <li><a href="">Formularze</a>
+                    <ul>
+                        <li><a href="formularze.html">Budowa formularzy</a></li>
+                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                    </ul></li>
+                    <li><a href="galeria.html" title="">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h3>Podstawowe znaczniki do tworzenia tabel to:</h3>
+            <ul>
+                <li>&lt;table&gt; - znacznik zawierajacy całą tabele</li>
+                <li>&lt;caption&gt; - tytuł tabeli</li>
+                <li>&lt;thead&gt; - nagłówek tabeli</li>
+                <li>&lt;tbody&gt; - zawartość tabeli</li>
+                <li>&lt;tfoot&gt; - stopka tabeli</li>
+                <li>&lt;tr&gt; - wiersz tabeli</li>
+                <li>&lt;td&gt; - komórka tabeli (zawarta w wierszu)</li>
+                <li>&lt;th&gt; - komórka nagłówkowa tabeli (również zawarta w wierszu)</li>
+            </ul>
+            <h3>Przykładowa tabela HTML:</h3>
+            <table>
+                <caption>Popularność języków programowania</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2"><b>Język programowania</b></th>
+                        <th colspan="2"><b>Pozycja</b></th>
+                    </tr>
+                    <tr>
+                        <th ><b>Luty 2020</b></th>
+                        <th ><b>2015</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"> Na podstawie:<br>
+                        <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html">http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html</a> 
+                        </td> 
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <footer>
+            &copy;stopka
+        </footer>
+    <!--</div>-->
+</body>
+</html>

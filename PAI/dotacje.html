@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="vievport" content="width=device-width, initial-scale = 1.0">
+        <title>
+            Formularz Dotacji
+        </title>
+    </head>
+    <body>
+        <div id="kontener">
+            <div id="baner">
+                <h2>Formularz Dotacji</h2>
+            </div>
+            <div id="tresc">
+                <form action="mailto:s95369@pollub.edu.pl" method="post"></form>
+                <fieldset id="fsWartosc">
+                <legend></legend>
+                    <datalist id="beneficjenci">
+                        <option value="Dom Dziecka w Katowicach">
+                        <option value="Schronisko w Poznaniu">
+                        <option value="Szpital w Warszawie">
+                        <option value="Wioski Dziecięce SOS">
+                    </datalist>
+                    Beneficjent:
+                    <input type="text" name="beneficjent" required list="beneficjenci" title="Wprowadź poprawna nazwę beneficjenta z rozwijanego menu."/> <br />
+                    Wartość dotacji:
+                    <input type="text" name="dotacja" required step="5" min="20" title="Wprowadź poprawną wartość dotacji (min. 20zł, dodawane co 5zł)."/>
+                </fieldset>
+                <fieldset id="fsDaneKarty">
+                <legend>Dane karty płatniczej</legend>
+                    Karta:
+                    <input type="radio" name="karta" value="visa" required> Visa
+                    <input type="radio" name="karta" value="mastercard" required> Master Card
+                    <br />
+                    Numer:
+                    <input type="number" name="numerKarty" required pattern="[0-9]{13}$|[0-9]{16}$" title="Wprowadź poprawny numer karty płatniczej."/> <br />
+                    Data ważności: 
+                    <input type="month" name="dataWaznosci" required title="Wprowadź dokładną datę ważności karty."/> <br />
+                    Kod CVV:
+                    <input type="number" name="cvv" required pattern="\d\d\d$|\d\d\d\d$" title="Podaj kod CVV złożony z 3 lub 4 cyfr podanych na odwrocie karty."/>
+                </fieldset>
+                <input type="submit" value="Rejestruj">
+                <input type="reset" value="Wyczyść">
+            </div>
+            <div id="stopka">
+                <br />
+                &copy;stopka
+            </div>
+        </div>
+    </body>
+</html>

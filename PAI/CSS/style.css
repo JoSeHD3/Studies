@@ -1,0 +1,141 @@
+body{
+    background: #4ae;
+    color: #000040;
+}
+
+h2, h3, footer{
+    background: #000040;
+    color: #8080ff;
+    text-align: center;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+section, aside{
+    border-radius: 25px;
+}
+
+.czerwone{
+    color: #ff0000;
+}
+
+section{
+    background:#66a8d4;
+    color: #000040;
+    width: 70%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+#kontener{
+    background:#ffffff;
+}
+
+nav ul{
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    font-family: calibri, tahoma;
+    margin-left: 35px;
+}
+
+nav ul li{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background: #98bed8;
+    margin-left: 5px;
+}
+
+nav ul li:hover{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    background: #f0f0f0;
+    margin-left: 3px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+}
+
+nav ul li li a{
+    width: 160px;
+}
+
+nav ul li li:hover{
+    background: white;
+}
+
+nav ul li ul{
+    overflow: hidden;
+    display: none;
+}
+
+nav ul li:hover ul{
+    position: absolute;
+    background: #aaa;
+    padding: 0;
+    top: 114px;
+    left: 330px;
+    display: block;
+    width: 177px;
+}
+
+#kursy{
+    width: 25%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}
+
+aside { 
+    background:#0000a0;
+    color:#dbffff;
+    padding:5px;
+    margin:5px;
+    font-size:90%;
+}
+    
+aside a{
+    color:#ffffb0;
+}
+
+#zdjecia{
+    width: 100%;
+    background: #66a8d4;
+    padding: 8px 4px;
+}
+
+#zdjecia a:hover{
+    color:#d5d5d5;
+}
+
+@media screen and (max-width: 720px) {
+    #wszystko{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    section,aside{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 721px){
+    #wszystko{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}

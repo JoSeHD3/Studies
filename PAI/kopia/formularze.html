@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>
+        Tworzenie formularzy
+    </title>
+</head>
+<body>
+    <!--<div id="kontener">-->
+        <header>
+            <h2> Szybki kurs HTML </h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Podstawowe znaczniki</a></li>
+                    <li><a href="tabele.html">Tworzenie tabel</a></li>
+                    <li><a href="">Formularze</a>
+                    <ul>
+                        <li><a href="formularze.html">Budowa formularzy</a></li>
+                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                    </ul></li>
+                    <li><a href="galeria.html" title="">Galeria</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h3>Podstawowe znaczniki HTML to:</h3>
+            <ul>
+                <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
+                <li>&lt;input&gt; - znacznik umożliwia wstawianie różnych pól (pole tekstowe, pole typu radio, pole typu checkbox) w zależności od wartości jego atrybutu type</li>
+                <li>&lt;select&gt; - pole komentarza typu lista rozwijana</li>
+                <li>&lt;textarea&gt; - pole formularza typu obszar tekstowy</li>
+                <li>&lt;button&gt; - pole formularza typu przycisk</li>
+            </ul>
+            <h3>Przykładowy formularz HTML:</h3>
+            <form action="#" method="get"></form>
+            <table>
+                <tr><td>Imie*: </td><td><input type="text" name="name" required pattern="^[A-ZŁŚ][a-złśąę]{1,20}(\s[A-ZŁŚ][a-złśąę]{1,20})?$"/></td></tr>
+                <tr><td>Nazwisko*: </td><td><input type="text" name="surname" required pattern="^[A-ZŁŚ][a-złśąę]{1,20}(\-[A-ZŁŚ][a-złśąę]{1,20})?$"/></td></tr>
+                <tr><td>Wiek*: </td><td><input type="number" min="1" max="99" required name="age"/></td></tr>
+                <tr><td>Państwo:</td>
+                <td><select name="country">
+                    <option value="pl">Polska</option>
+                    <option value="de">Niemcy</option>
+                    <option value="gb">Anglia</option>
+                    <option value="fr">Francja</option>
+                </select> </td></tr>
+                <tr><td>Adres e-mail*:</td><td> <input type="email" required placeholder="xyz@abc.xx" pattern="^(([\w_]+)-*\.?)+@[\w](([\w]+)-?_?\.?)+([a-z]{2,4})$" name="mail"/></td></tr>
+            </table>
+            <h4>Zamawiam tutorial z języka:</h4>
+            <input type="checkbox" name="PHP" value="PHP" /> PHP
+            <input type="checkbox" name="C" value="C" /> C/C++
+            <input type="checkbox" name="Java" value="J" /> Java <br />
+            <h4>Sposób zapłaty*: </h4>
+            <input type="radio" name="przegladarka" required value="euc" /> Eurocard <br />
+            <input type="radio" name="przegladarka" required value="Vs" /> Visa <br />
+            <input type="radio" name="przegladarka" required value="PB" /> Przelew bankowy <br />
+            <input type="submit" value="Wyślij" />
+            <input type="reset" value="Anuluj" />
+        </section>
+        <footer id="stopka">
+            &copy;stopka
+        </footer>
+    <!--</div>-->
+</body>
+</html>
