@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1637929764 source:/run/media/student/CCCOMA_X64FRE_PL-PL_DV9/studia/Algorytmy/Aproksymacja/main.cpp
+	<iostream>
+	<math.h>
+
