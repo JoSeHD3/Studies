@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vievport" content="width=device-width, initial-scale = 1.0">
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="JS/script.js"></script>
+    <title>
+        PIZZERIA
+    </title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo"/>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+            <li><a href="order.html">ZAMÓW!</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="zamowienie">
+            <form action="mailto:s95369@pollub.edu.pl" method="post"></form>
+            <fieldset id="fsCiasto">
+            <legend>Ciasto</legend>
+                <input type="radio" name="ciasto" value="Cienkie"/> Cienkie
+                <input type="radio" name="ciasto" value="Tradycyjne" /> Tradycyjne
+                <input type="radio" name="ciasto" value="Grube" /> Grube
+                <span id="ciasto_error" class="czerwone"></span>
+            </fieldset>
+            <fieldset id="fsDodatki">
+            <legend>Dodatki</legend>
+                <div class="flexColumn">  
+                    <input class="flexRow" type="checkbox" value="szynka" name="dodatek"/> Szynka
+                    <input class="flexRow" type="checkbox" value="salami" name="dodatek"/> Salami 
+                    <input class="flexRow" type="checkbox" value="boczek" name="dodatek"/> Boczek 
+                </div>     
+                <div class="flexColumn">  
+                <input class="flexRow" type="checkbox" value="papryka" name="dodatek"/> Papryka  
+                <input class="flexRow" type="checkbox" value="pomidor" name="dodatek"/> Pomidor  
+                <input class="flexRow" type="checkbox" value="ser" name="dodatek"/> Ser     
+            </div>                  
+                <div class="flexColumn">                          
+                <input class="flexRow" type="checkbox" value="jalapeno" name="dodatek"/> Jalapeno  
+                <input class="flexRow" type="checkbox" value="ananas" name="dodatek"/> Ananas 
+                <input class="flexRow" type="checkbox" value="cebula" name="dodatek"/> Cebula 
+            </div>  
+                <div class="flexColumn">    
+                <input class="flexRow" type="checkbox" value="ogorek" name="dodatek"/> Ogórek 
+                <input class="flexRow" type="checkbox" value="oliwki" name="dodatek"/> Oliwki 
+                <input class="flexRow" type="checkbox" value="pieczarki" name="dodatek"/> Pieczarki 
+            </div>    
+                <div class="flexColumn">    
+                <input class="flexRow" type="checkbox" value="kukurydza" name="dodatek"/> Kukurydza 
+                <input class="flexRow" type="checkbox" value="kabanos" name="dodatek"/> Kabanos 
+                <input class="flexRow" type="checkbox" value="kurczak" name="dodatek"/> Kurczak 
+            </div>    
+            <span id="dodatek_error" class="czerwone"></span>
+            </fieldset>
+            <fieldset id="fsSosy">
+            <legend>Sosy</legend>   
+                <table>
+                    <tr><td>Wybierz sos:</td><td>
+                        <input type="radio" value="pomidorowy" name="sos" id="sos1" />Pomidorowy
+                        <input type="radio" value="czosnkowy" name="sos" id="sos2" />Czosnkowy
+                        <input type="radio" value="Ketchup Lagodny" name="sos" id="sos3" />k. łagodny
+                        <input type="radio" value="Ketchup Pikantny" name = "sos" id="sos4" />k. pikantny
+                        </td><td><span id="sos_error" class="czerwone"></span></td>
+                    </tr>
+                    <tr><td>Imie odbiorcy:</td><td>
+                        <input type="text" id="imie">
+                    </td>
+                    <td id="imie_error" class="czerwone"></td></tr>
+                    <tr><td>E-mail odbiorcy:</td><td>
+                        <input type="email" id="email">
+                    </td>
+                    <td id="mail_error" class="czerwone"></td></tr>
+                    <tr><td>Adres odbiorcy:</td><td>
+                        <input type="text" id="adres">
+                    </td></tr>
+                </table>
+            </fieldset> <br />
+            <button onclick="zlozZamowienie()">Zamów</button>
+            <button onclick="anulujZamowienie()">Anuluj Zamówienie</button>
+            <div id="data"></div>
+        </div>
+    </section>
+    <footer>
+        &copy;Sebastian Bożek
+    </footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+body{
+    background: #cccccc;
+}
+
+header{
+    background-color: #565656;
+    margin: auto;
+    text-align: center;
+}
+
+header img{
+    border-radius: 15px;
+}
+
+section{
+    width: auto;
+    height: 800px;
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+nav ul{
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: 35px;
+}
+
+nav ul li{
+    width: 100px;
+    height: 40px;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    background: #e69a0d;
+    margin-left: 5px;
+    border-radius: 15px;
+}
+
+nav ul li:hover{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    background: #8f8585;
+    margin-left: 3px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 8pt;
+    text-decoration: none;
+}
+
+#tst{
+    display:flex;
+    flex-direction: column;
+}
+#txt{
+    margin-top: 16%;
+    color:#ffffff;
+    text-shadow: 3px 3px 3px black;
+    padding: 2px;
+    font-size: 220%;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#zamowSrodek{
+    margin: auto;
+    margin-top: 4%;
+    background: #e69a0d;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    border-radius: 15px;
+    width: 300px;
+    height: 60px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+#zamowSrodek a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer{
+    background: #e69a0d;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 8px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#images{
+    background: #363636;
+    margin: auto;
+    width: 80%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.czerwone{
+    color: #ff0000;
+}
+
+#images img{
+    padding-top:15px;
+    padding-left: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+#fsDodatki {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.flexColumn {
+    display: flex;
+    flex-flow: column wrap;
+    width: 25%;
+    margin-top: 5px;
+}
+
+fieldset{
+    font-size: 110%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+}
+
+#data{
+    font-size: 110%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+}
+
+#naflexa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+#naflexa ul {
+    margin: auto;
+    background: #e69a0d;
+    padding: 18px;
+    margin-top: 3%;
+    border: gray solid 1px;
+    border-radius: 15px;
+    list-style-type:none;
+}
+
+#naflexa ul li {
+    font-size: 120%;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#zamowienie{
+    margin: auto;
+    width: 50%;
+    background: #363636;
+    border: #363636 solid 1px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+}
+
+.previous_btn {
+    bottom: 0;
+    left: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+  }
+  
+  .next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 100px;
+    top: 0;
+  }
+  
+  .previous_btn, .next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px;
+  }
+  
+  .previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+  }
+
+@media only screen and (max-width: 768px) {
+    nav ul{
+        width: 96%;
+        padding: 10px 0;
+        font-size: 170%;
+        border-bottom: 1pt solid #ffffff;
+        margin-left: 15px;
+    }
+    body{
+        background: #ff0000;
+    }
+}
